@@ -32,14 +32,14 @@ const STOP_BEFORE_DOUBLE = params.get("stop") === "beforedouble";
 function hostOk() {
   var m = document.getElementById("msgs");
   if (m) {
-    m.innerHTML = "تم تفعيل  ...";
+    m.innerHTML = "تم التفعيل بنجاح ✔";
   }
 }
 
 function hostFail() {
   var m = document.getElementById("msgs");
   if (m) {
-    m.innerHTML = "فشل التفعيل أعد تشغيل جهازك ...";
+    m.innerHTML = "فشل التفعيل أعد تشغيل جهازك";
     m.style.color = "yellow";
   }
 }
@@ -47,7 +47,7 @@ function hostFail() {
 function hostAlready() {
   var m = document.getElementById("msgs");
   if (m) {
-    m.innerHTML = "جهازك مفعل  سابقا ...";
+    m.innerHTML = "جهازك مفعل  سابقا";
   }
 }
 

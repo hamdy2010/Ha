@@ -1700,7 +1700,7 @@ export async function kexploit() {
   }
 
   if (localStorage.ExploitLoaded === "yes" && sessionStorage.ExploitLoaded != "yes") {
-    msgs.innerHTML = "جهازك مفعل  سابقا ...";
+    msgs.innerHTML = "جهازك مفعل  سابقا";
     return new Promise(() => {});
   }
 
@@ -1866,9 +1866,9 @@ function runPayload(path) {
 kexploit().then(() => {
 	setTimeout(() => {
 		runPayload("./goldhen_2.4b18.12.bin");
-		msgs.innerHTML = "تم التفعيل ...";
+		msgs.innerHTML = "تم التفعيل بنجاح ✔";
 	},500);
 }).catch(() => {
-    msgs.innerHTML = "فشل التفعيل أعد تشغيل جهازك ...";
+    msgs.innerHTML = "فشل التفعيل أعد تشغيل جهازك";
     msgs.style.color = "yellow";
 });
